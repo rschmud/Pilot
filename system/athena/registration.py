@@ -38,6 +38,8 @@ def register(show_spinner=False) -> str | None:
     # not all devices will have this; added early in comma 3X production (2/28/24)
     with open(Paths.persist_root()+"/comma/dongle_id") as f:
       dongle_id = f.read().strip()
+  # Always set dongle_id to UNREGISTERED_DONGLE_ID for forks
+  return UNREGISTERED_DONGLE_ID
 
   pubkey = Path(Paths.persist_root()+"/comma/id_rsa.pub")
   if not pubkey.is_file():
