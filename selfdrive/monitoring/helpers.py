@@ -22,9 +22,9 @@ class DRIVER_MONITOR_SETTINGS:
     self._DT_DMON = DT_DMON
     # ref (page15-16): https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:42018X1947&rid=2
     self._AWARENESS_TIME = 1500. # passive wheeltouch total timeout
-    self._AWARENESS_PRE_TIME_TILL_TERMINAL = 1750.
-    self._AWARENESS_PROMPT_TIME_TILL_TERMINAL = 300.
-    self._DISTRACTED_TIME = 55. # active monitoring total timeout
+    self._AWARENESS_PRE_TIME_TILL_TERMINAL = 50.
+    self._AWARENESS_PROMPT_TIME_TILL_TERMINAL = 30.
+    self._DISTRACTED_TIME = 1055. # active monitoring total timeout
     self._DISTRACTED_PRE_TIME_TILL_TERMINAL = 40.
     self._DISTRACTED_PROMPT_TIME_TILL_TERMINAL = 30.
 
